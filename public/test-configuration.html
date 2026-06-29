@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Configuration — Industron Portal</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header class="topbar">
+    <img src="images/logo.png" alt="Industron Logo" class="logo">
+    <div class="topbar-titles">
+        <span class="company">Industron Technical Services Pvt. Ltd.</span>
+        <span class="portal">Customer Requirement Collection Portal</span>
+    </div>
+    <div class="topbar-spacer"></div>
+    <span class="topbar-badge">Step 2 of 3</span>
+</header>
+
+<main class="container">
+
+    <ol class="stepper">
+        <li class="step is-complete"><span class="step-num">1</span><span class="step-name">Your Details</span></li>
+        <li class="step is-active"><span class="step-num">2</span><span class="step-name">Configuration</span></li>
+        <li class="step"><span class="step-num">3</span><span class="step-name">Review</span></li>
+    </ol>
+
+    <div class="page-head">
+        <h1>Test Configuration</h1>
+        <p class="subtitle">Describe your material and the specifics of the test.</p>
+    </div>
+
+    <!-- ================= Material Information ================= -->
+    <section class="form-section">
+
+        <h3>Material Information</h3>
+
+        <div class="form-row">
+
+            <div class="form-group">
+                <label>Material Category *</label>
+                <select id="materialCategory">
+                    <option value="">Select Material Category</option>
+                    <option>Metal / Alloy</option>
+                    <option>Polymer / Plastic</option>
+                    <option>Composite</option>
+                    <option>Ceramic</option>
+                    <option>Elastomer / Rubber</option>
+                    <option>Textile / Fibre</option>
+                    <option>Thin Film / Coating</option>
+                    <option>Biological / Soft Material</option>
+                    <option>Other</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Material Form *</label>
+                <select id="materialForm" required>
+                    <option value="">Select Material Form</option>
+                    <option>Bulk Block</option>
+                    <option>Sheet</option>
+                    <option>Plate</option>
+                    <option>Film</option>
+                    <option>Wire</option>
+                    <option>Rod / Bar</option>
+                    <option>Tube</option>
+                    <option>Powder</option>
+                    <option>Coated Sample</option>
+                    <option>Fabric / Textile</option>
+                    <option>Biological Tissue</option>
+                    <option>Other</option>
+                </select>
+            </div>
+
+        </div>
+
+        <div class="form-group">
+            <label>Material Description</label>
+            <textarea id="materialDescription" rows="4"
+                placeholder="Example: SS304 sheet, heat treated aluminium alloy, carbon fibre composite, polymer film, etc."></textarea>
+        </div>
+
+    </section>
+
+    <!-- ================= Mechanical Test Section ================= -->
+    <div id="mechSection">
+
+        <h2 id="configTitle" class="section-title">Test Configuration</h2>
+
+        <!-- Sample Geometry -->
+        <section class="form-section">
+
+            <h3>Sample Geometry &amp; Dimensions</h3>
+
+            <h4>Specimen Type *</h4>
+
+            <div class="radio-group">
+                <label><input type="radio" name="specimenType" value="Dogbone"> Dogbone / Dumbbell</label>
+                <label><input type="radio" name="specimenType" value="Flat Coupon"> Flat Coupon / Strip</label>
+                <label><input type="radio" name="specimenType" value="Round Bar"> Round Bar</label>
+                <label><input type="radio" name="specimenType" value="Wire"> Wire / Thread / Fibre</label>
+                <label><input type="radio" name="specimenType" value="Tube"> Tube</label>
+                <label><input type="radio" name="specimenType" value="Film"> Film / Sheet</label>
+                <label><input type="radio" name="specimenType" value="Custom"> Custom</label>
+            </div>
+
+            <h4>Sample Cross-Section *</h4>
+
+            <div class="radio-group">
+                <label><input type="radio" name="crossSection" value="5 × 1 mm"> ~5 mm × 1 mm</label>
+                <label><input type="radio" name="crossSection" value="1 × 0.5 mm"> ~1 mm × 0.5 mm</label>
+                <label><input type="radio" name="crossSection" value="0.1 × 0.1 mm"> ~0.1 mm × 0.1 mm</label>
+                <label><input type="radio" id="customCrossSection" name="crossSection" value="Custom"> Other / Custom</label>
+            </div>
+
+            <div id="customDimensions" class="custom-section">
+
+                <h4>Custom Dimensions</h4>
+
+                <div class="form-row">
+
+                    <div class="form-group">
+                        <label>Width (mm)</label>
+                        <input type="number" id="customWidth" placeholder="0.0">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Thickness (mm)</label>
+                        <input type="number" id="customThickness" placeholder="0.0">
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Test Requirements -->
+        <section class="form-section">
+
+            <h3>Test Requirements</h3>
+
+            <h4>Preferred Force Range *</h4>
+
+            <div class="radio-group">
+                <label><input type="radio" name="forceRange" value="<1 N"> &lt; 1 N</label>
+                <label><input type="radio" name="forceRange" value="1–10 N"> 1 – 10 N</label>
+                <label><input type="radio" name="forceRange" value="10–20 N"> 10 – 20 N</label>
+            </div>
+
+            <h4 id="deformationLabel">Maximum Elongation Required *</h4>
+
+            <div class="radio-group">
+                <label><input type="radio" name="elongation" value="<10 mm"> &lt; 10 mm</label>
+                <label><input type="radio" name="elongation" value="10–50 mm"> 10 – 50 mm</label>
+                <label><input type="radio" name="elongation" value=">50 mm"> &gt; 50 mm</label>
+            </div>
+
+        </section>
+
+        <!-- Measurement -->
+        <section class="form-section">
+
+            <h3>Measurement &amp; Properties of Interest</h3>
+
+            <h4>Properties to Be Measured</h4>
+
+            <div class="checkbox-group" id="propertiesGroup">
+                <!-- Options are populated by configuration.js based on the selected test -->
+            </div>
+
+            <div id="otherPropertyBox" class="custom-section">
+                <label style="display:block;font-weight:600;margin-bottom:7px;">Please Specify</label>
+                <input type="text" id="otherPropertyText" placeholder="Enter property name">
+            </div>
+
+            <h4>Strain Measurement Method</h4>
+
+            <div class="radio-group">
+                <label><input type="radio" name="strainMethod" value="Crosshead"> Crosshead Displacement</label>
+                <label><input type="radio" name="strainMethod" value="Clip-on Extensometer"> Clip-on Extensometer</label>
+                <label><input type="radio" name="strainMethod" value="Video / DIC"> Video / DIC (Non-contact Optical)</label>
+                <label><input type="radio" name="strainMethod" value="None"> No Strain Measurement Required</label>
+            </div>
+
+        </section>
+
+    </div>
+
+    <!-- Other Tests -->
+    <div id="comingSoonSection" class="form-section">
+        <h3>Test Configuration</h3>
+        <p>
+            The detailed configuration form for the selected test is currently under development.
+            Your details so far will be sent to our team, who will follow up with you directly.
+        </p>
+    </div>
+
+    <!-- Navigation -->
+    <div class="button-row">
+        <a href="requirement-overview.html" class="prev-button">← Previous</a>
+        <button type="button" class="next-button" id="nextButton">Next →</button>
+    </div>
+
+</main>
+
+<footer>
+    <p>© 2026 Industron Technical Services Pvt. Ltd.</p>
+</footer>
+
+<script src="js/configuration.js"></script>
+
+</body>
+
+</html>

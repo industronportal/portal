@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Details &amp; Test — Industron Portal</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header class="topbar">
+    <img src="images/logo.png" alt="Industron Logo" class="logo">
+    <div class="topbar-titles">
+        <span class="company">Industron Technical Services Pvt. Ltd.</span>
+        <span class="portal">Customer Requirement Collection Portal</span>
+    </div>
+    <div class="topbar-spacer"></div>
+    <span class="topbar-badge">Step 1 of 3</span>
+</header>
+
+<main class="container">
+
+    <ol class="stepper">
+        <li class="step is-active"><span class="step-num">1</span><span class="step-name">Your Details</span></li>
+        <li class="step"><span class="step-num">2</span><span class="step-name">Configuration</span></li>
+        <li class="step"><span class="step-num">3</span><span class="step-name">Review</span></li>
+    </ol>
+
+    <div class="page-head">
+        <h1>Your Details &amp; Test</h1>
+        <p class="subtitle">Tell us who you are and which test you're interested in.</p>
+    </div>
+
+    <!-- Customer Information -->
+    <section class="form-section">
+
+        <h3>Customer Information</h3>
+
+        <form>
+
+            <div class="form-row">
+
+                <div class="form-group">
+                    <label>Organisation / Institution *</label>
+                    <input type="text" id="organisation" placeholder="e.g. IIT Madras" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Contact Person *</label>
+                    <input type="text" id="contactPerson" placeholder="Full name" required>
+                </div>
+
+            </div>
+
+            <div class="form-row">
+
+                <div class="form-group">
+                    <label>Department / Laboratory</label>
+                    <input type="text" id="department" placeholder="Optional">
+                </div>
+
+                <div class="form-group">
+                    <label>Designation</label>
+                    <input type="text" id="designation" placeholder="Optional">
+                </div>
+
+            </div>
+
+            <div class="form-row">
+
+                <div class="form-group">
+                    <label>Email Address *</label>
+                    <input type="email" id="email" placeholder="name@example.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Phone / Mobile *</label>
+                    <input type="tel" id="phone" placeholder="+91 ..." required>
+                </div>
+
+            </div>
+
+        </form>
+
+    </section>
+
+    <!-- Instrument Selection -->
+    <section class="form-section">
+
+        <h3>Instrument / Test Selection</h3>
+
+        <form>
+
+            <h4>Mechanical Testing</h4>
+
+            <div class="radio-group">
+
+                <label>
+                    <input type="radio" name="mechanicalTest" value="Tensile">
+                    Tensile
+                </label>
+
+                <label>
+                    <input type="radio" name="mechanicalTest" value="Compression">
+                    Compression
+                </label>
+
+                <label>
+                    <input type="radio" name="mechanicalTest" value="Bending">
+                    Bending
+                </label>
+
+                <label>
+                    <input type="radio" name="mechanicalTest" value="Fracture">
+                    Fracture &amp; Fatigue
+                </label>
+
+                <label>
+                    <input type="radio" name="mechanicalTest" value="Creep">
+                    Creep &amp; Stress Relaxation
+                </label>
+
+            </div>
+
+            <hr>
+
+            <h4>Nano Platform</h4>
+
+            <div class="checkbox-group">
+
+                <label>
+                    <input type="checkbox" class="nanoTest" id="nanoIndentation"
+                           value="Nanoindentation & In-situ SPM">
+                    Nanoindentation &amp; In-situ SPM
+                </label>
+
+            </div>
+
+            <!-- Additional Modules -->
+            <div class="nano-options">
+
+                <p>Additional Modules</p>
+
+                <div class="options-grid">
+
+                    <label>
+                        <input type="checkbox" class="nanoModule"
+                               value="Accelerated Mechanical Property Mapping">
+                        Accelerated Mechanical Property Mapping
+                    </label>
+
+                    <label>
+                        <input type="checkbox" class="nanoModule" value="NanoScratch">
+                        NanoScratch
+                    </label>
+
+                    <label>
+                        <input type="checkbox" class="nanoModule" value="NanoDMA">
+                        NanoDMA
+                    </label>
+
+                    <label>
+                        <input type="checkbox" class="nanoModule" value="Scanning Wear Test">
+                        Scanning Wear Test
+                    </label>
+
+                    <label>
+                        <input type="checkbox" class="nanoModule" value="High Temperature Testing">
+                        High Temperature Testing
+                    </label>
+
+                </div>
+
+            </div>
+
+            <div class="checkbox-group" style="margin-top:16px;">
+
+                <label>
+                    <input type="checkbox" class="nanoTest" id="depthMicro"
+                           value="Depth Sensing Microindentation">
+                    Depth Sensing Microindentation
+                </label>
+
+            </div>
+
+        </form>
+
+    </section>
+
+    <!-- Navigation -->
+    <div class="button-row">
+        <a href="index.html" class="prev-button">← Previous</a>
+        <button type="button" class="next-button" id="nextButton">Next →</button>
+    </div>
+
+</main>
+
+<footer>
+    <p>© 2026 Industron Technical Services Pvt. Ltd.</p>
+</footer>
+
+<script src="js/overview.js"></script>
+
+</body>
+
+</html>

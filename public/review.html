@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review &amp; Submit — Industron Portal</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header class="topbar">
+    <img src="images/logo.png" alt="Industron Logo" class="logo">
+    <div class="topbar-titles">
+        <span class="company">Industron Technical Services Pvt. Ltd.</span>
+        <span class="portal">Customer Requirement Collection Portal</span>
+    </div>
+    <div class="topbar-spacer"></div>
+    <span class="topbar-badge">Step 3 of 3</span>
+</header>
+
+<main class="container">
+
+    <ol class="stepper">
+        <li class="step is-complete"><span class="step-num">1</span><span class="step-name">Your Details</span></li>
+        <li class="step is-complete"><span class="step-num">2</span><span class="step-name">Configuration</span></li>
+        <li class="step is-active"><span class="step-num">3</span><span class="step-name">Review</span></li>
+    </ol>
+
+    <div class="page-head">
+        <h1>Review &amp; Submit</h1>
+        <p class="subtitle">Please confirm your details before sending them to our team.</p>
+    </div>
+
+    <section class="form-section">
+        <h3>Customer Information</h3>
+        <div id="customerReview" class="review-block"></div>
+    </section>
+
+    <section class="form-section">
+        <h3>Selected Test</h3>
+        <div id="testReview" class="review-block"></div>
+    </section>
+
+    <section class="form-section">
+        <h3>Material Information</h3>
+        <div id="materialReview" class="review-block"></div>
+    </section>
+
+    <section class="form-section">
+        <h3>Test Configuration</h3>
+        <div id="configurationReview" class="review-block"></div>
+    </section>
+
+    <div class="button-row">
+        <a href="test-configuration.html" class="prev-button">← Previous</a>
+        <button type="button" id="submitButton" class="next-button">Submit Request →</button>
+    </div>
+
+</main>
+
+<footer>
+    <p>© 2026 Industron Technical Services Pvt. Ltd.</p>
+</footer>
+
+<script src="js/review.js"></script>
+
+</body>
+
+</html>
