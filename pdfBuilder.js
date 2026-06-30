@@ -147,7 +147,7 @@ function buildPdfContent(doc, data, referenceNumber, logoPath) {
         .fontSize(7.5)
         .fillColor("#555555")
         .text(
-            "Nano & Meso Scale Mechanical Characterization | Instrumentation | " +
+            "Nano - Meso Scale Mechanical Characterization | Instrumentation | " +
             "Material Characterization Services | Consultancy",
             textX,
             doc.y + 2,
